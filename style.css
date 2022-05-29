@@ -1,0 +1,100 @@
+/* General Properties */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: 'Roboto';
+}
+
+.container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+/* Here Starts The Header CSS*/
+.header {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.top-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-left-header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.top-right-header {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    margin-right: 15px;
+}
+
+/* Here Starts The Sidebar CSS */
+
+.sidebar {
+    background-color: #e4e4e7;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    padding: 24px 18px;
+    padding-left: 32px;
+}
+
+.sidebar-top {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    align-items: center;
+    gap: 5px;
+}
+
+.sidebar-top > p {
+    color: #3f3f46;
+    font-weight: 600;
+}
+
+.sidebar-nav,
+.sidebar-lower {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar-nav > div, .sidebar-lower > div {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    align-items: center;
+}
+
+.sidebar-nav > div > p,
+.sidebar-lower > div > p {
+    color: #3f3f46;
+    font-weight: bold;
+}
+
+.sidebar-nav > div > span,
+.sidebar-lower > div > span {
+    color: #3f3f46;
+
+}
