@@ -14,7 +14,7 @@ p {
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 200px 1fr;
 }
 
 /* Here Starts The Header CSS*/
@@ -231,9 +231,17 @@ p {
     font-size: 1.25em;
 }
 
+hr {
+    border-color: rgba(39, 39, 42, 0.1);
+}
+
+.announcement {
+    padding: 0px 5px;
+}
+
 .announcements-inner {
     background-color: rgb(250, 250, 250);
-    padding: 10px;
+    padding: 18px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px #e4e4e7;
 }
@@ -246,4 +254,48 @@ p {
 .announcement-description {
     font-size: 0.75em;
     color: rgba(39, 39, 42, 0.75);
+}
+
+.trending {
+    padding-right: 10px;
+}
+
+.trending > p {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.trending-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #fafafa;
+    padding: 18px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #e4e4e7;
+}
+
+.trend {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    column-gap: 18px;
+}
+
+.trend > img {
+    border-radius: 50%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.trend > p {
+    grid-column: 2 / 3;
+    margin: 0;
+    color: #27272a;
+    font-weight: bold;
+}
+
+.trend > p:last-child {
+    color: rgba(63, 63, 70, 0.85);
+    font-weight: normal;
+    font-size: 1em;
 }
