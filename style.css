@@ -12,7 +12,6 @@ p {
 }
 
 .container {
-    width: 100vw;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
@@ -189,7 +188,7 @@ p {
 }
 
 .project {
-    width: 25vw;
+    width: 22vw;
     height: 25vh;
     background-color: #fafafa;
     padding: 24px;
@@ -220,4 +219,31 @@ p {
 
 .project-icons > svg {
     color: #3f3f46;
+}
+
+.announcements {
+    padding-right: 10px;
+
+}
+
+.announcements > p {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.announcements-inner {
+    background-color: rgb(250, 250, 250);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #e4e4e7;
+}
+
+.announcement-title {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.announcement-description {
+    font-size: 0.75em;
+    color: rgba(39, 39, 42, 0.75);
 }
